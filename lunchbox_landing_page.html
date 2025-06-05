@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunch Box - Comidas Saludables</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #7FB77E;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .menu-item {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .cta {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .cta a {
+      background-color: #5C8D89;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .info, .formulario {
+      background-color: white;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #7FB77E;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lunch Box</h1>
+    <p>Comidas saludables a tu puerta</p>
+  </header>
+
+  <section>
+    <h2>¿Qué ofrecemos?</h2>
+    <p>Elige entre tres menús saludables y recibe tus comidas en casa en empaques biodegradables.</p>
+
+    <div class="menu">
+      <div class="menu-item">
+        <h3>🥑 Vegano</h3>
+        <p>Almuerzos basados en plantas, sin productos animales.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🥩 Keto</h3>
+        <p>Bajo en carbohidratos, alto en grasas saludables.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🌾 Sin Gluten</h3>
+        <p>Ingredientes certificados sin gluten, nutritivos y sabrosos.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="https://wa.me/51948733333" target="_blank">Haz tu pedido por WhatsApp</a>
+    </div>
+
+    <div class="info">
+      <h2>Detalles del Servicio</h2>
+      <ul>
+        <li>Entregas en: Chiclayo</li>
+        <li>Horarios: 11:00 a.m. - 2:00 p.m.</li>
+        <li>Empaque biodegradable, seguro y práctico.</li>
+        <li>Pagos por Yape, Plin o Transferencia Bancaria.</li>
+        <li>Encuesta post-entrega para recibir tu feedback.</li>
+      </ul>
+    </div>
+
+    <div class="formulario">
+      <h2>Formulario de Pedido</h2>
+      <input type="text" placeholder="Nombre completo">
+      <input type="text" placeholder="Distrito">
+      <select>
+        <option>Elige tu menú</option>
+        <option>Vegano</option>
+        <option>Keto</option>
+        <option>Sin Gluten</option>
+      </select>
+      <input type="text" placeholder="Días de entrega (Lun, Mié, Vie)">
+      <select>
+        <option>Método de pago</option>
+        <option>Yape</option>
+        <option>Plin</option>
+        <option>Transferencia</option>
+      </select>
+      <button>Enviar Pedido por WhatsApp</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lunch Box Perú. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
